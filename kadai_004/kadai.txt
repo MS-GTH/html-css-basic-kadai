@@ -1,0 +1,41 @@
+motoaki.shiratsu@MSMacBook-Pro git_tutorial % git add sample.txt
+motoaki.shiratsu@MSMacBook-Pro git_tutorial % git commit -m "最初のコミット"                
+[main (root-commit) b652c0c] 最初のコミット
+ 1 file changed, 1 insertion(+)
+ create mode 100644 sample.txt
+motoaki.shiratsu@MSMacBook-Pro git_tutorial % git log --oneline
+b652c0c (HEAD -> main) 最初のコミット
+motoaki.shiratsu@MSMacBook-Pro git_tutorial % .cd
+zsh: command not found: .cd
+motoaki.shiratsu@MSMacBook-Pro git_tutorial % cd ../
+motoaki.shiratsu@MSMacBook-Pro Git % mkdir git_challenge
+motoaki.shiratsu@MSMacBook-Pro Git % cd git?challenge
+motoaki.shiratsu@MSMacBook-Pro git_challenge % git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /Users/motoaki.shiratsu/SAMURAI/Git/git_challenge/.git/
+motoaki.shiratsu@MSMacBook-Pro git_challenge % git add hello_world.txt                                                             
+motoaki.shiratsu@MSMacBook-Pro git_challenge % git commit -m "hello_world.txtを追加"
+[master (root-commit) b0ccbbd] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+motoaki.shiratsu@MSMacBook-Pro git_challenge % git commit -m "日本語訳を追記"       
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   hello_world.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+motoaki.shiratsu@MSMacBook-Pro git_challenge % git add hello_world.txt              
+motoaki.shiratsu@MSMacBook-Pro git_challenge % git commit -m "日本語訳を追記"
+[master 4f47a0a] 日本語訳を追記
+ 1 file changed, 2 insertions(+), 1 deletion(-)
